@@ -141,7 +141,7 @@ blockquote {
   }
 }
 
-article {
+main > .wrapper {
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit;
 }
