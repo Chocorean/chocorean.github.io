@@ -141,6 +141,10 @@ blockquote {
   }
 }
 
+article {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+}
 
 
 /**
@@ -188,6 +192,7 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
+  background-color: rgba(49, 53, 60, 0.4);
   @extend %clearfix;
 
   @include media-query($on-laptop) {

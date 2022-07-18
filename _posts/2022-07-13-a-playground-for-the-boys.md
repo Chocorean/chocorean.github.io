@@ -16,14 +16,14 @@ Enjoy!*
 I have always wanted to have my own domain and website to play with. One can
 easily find out it is possible to host a website with self-signed certificates
 for free, but I always believed domain names were a mandatory non-free step, and
-I eventually gave up and got a domain from *G-word*.
+I eventually gave up and got a domain from *G-company*.
 
 My friend [Mcdostone][mcdostone] introduced me to [EU.org][eu.org], which gives
 to people like you and me the opportunity to get our own domain names for free.
 This story describes the process I had to go through in order to get a fully
 working domain name with EU.org.
 
-### Table of content
+### Menu
 
 1. [Prerequisites](#prerequisites)
 2. [Request a domain name](#request-a-domain-name)
@@ -39,9 +39,9 @@ working domain name with EU.org.
 
 I will not cover how to:
 
-- [x] run a webserver on a local host
-- [x] do port forwarding on your router
-- [x] get free SSL certificates signed by a CA (check out [certbot][certbot])
+- [x] run a webserver on a local host;
+- [x] do port forwarding on your router;
+- [x] get free SSL certificates signed by a CA (check out [certbot][certbot]).
 
 I am running a very simple [Flask][flask] webserver on a
 Raspberry PI 4, available at [http://inteam.eu.org][inteam].
@@ -50,7 +50,7 @@ Raspberry PI 4, available at [http://inteam.eu.org][inteam].
 
 First thing I had to do was to [create an account](https://nic.eu.org/arf/en/contact/create/).
 It is quick and simple, they ask for basic information that will be used later
-when I will request a domain name. They ask for a fax number (*really?*) and
+when requesting a domain name. They ask for a fax number (*really?*) and
 **five** address lines, and I unfortunately have only one. Felt discriminated
 but anyway.
 
@@ -63,23 +63,23 @@ project is compatible with their rules.
 ![domain request 1](/img/playground/reqdom1.png)
 <p align="center"><i>Domain's organization information</i></p>
 
-A point to note here is the `Name servers` form. I am not an expert, so I would
-just opted for their recommended option for correctness.
-Finally, I added my domain name next to `Name1`, and my public IP address
-of your webserver next to `IP1`.
+A point to note here is the `Name servers` form. I am not an expert, so I just
+opted for their recommended option for correctness.
+Finally, I added my domain name next to `Name1`, and the public IP address
+of my webserver next to `IP1`.
 
 ![domain request 2](/img/playground/reqdom2.png)
 <p align="center"><i>Third checkbox please!</i></p>
 
 I then submitted my request! The EU.org team manually (*I guess?*) reviewed and
 eventually approved my request. It took a few days for me, less than two weeks
-IIRC. Once I got notified your domain and the appropriate records had been
+IIRC. Once I got notified my domain and the appropriate records had been
 created, this is what my domains list looked like, at the exception of `DNSSEC`:
 
 ![domains list](/img/playground/domains_list.png)
 
 *Su-per.* I've just got my first free domain name. It took a few days to spread
-across the DNS servers, as expected. I was regularly checking [if your domain is yet resolved](https://dnschecker.org/)
+across the DNS servers, as expected. I was regularly checking [if my domain was yet resolved](https://dnschecker.org/)
 , and I eventually noticed a lot of DNS servers **wound not resolve it**. *Why?*
 
 ### Configure DNSSEC
@@ -352,5 +352,5 @@ Here are all the documents that helped me through this/
 [certbot]: https://certbot.eff.org
 [flask]: https://flask.palletsprojects.com
 [inteam]: http://inteam.eu.org
-[tuto]: [https://www.digitalocean.com/community/tutorials/how-to-setup-dnssec-on-an-authoritative-bind-dns-server-2$]
+[tuto]: https://www.digitalocean.com/community/tutorials/how-to-setup-dnssec-on-an-authoritative-bind-dns-server-2
 [script]: https://github.com/piotrnajman/dnssec-zonesigner
