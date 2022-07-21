@@ -39,11 +39,11 @@ working domain name with EU.org.
 
 I will not cover how to:
 
-- [x] run a webserver on a local host;
+- [x] run a web server on a local host;
 - [x] do port forwarding on your router;
 - [x] get free SSL certificates signed by a CA (check out [certbot][certbot]).
 
-I am running a very simple [Flask][flask] webserver on a
+I am running a very simple [Flask][flask] web server on a
 Raspberry PI 4, available at [http://inteam.eu.org][inteam].
 
 ### Request the domain name
@@ -66,7 +66,7 @@ project is compatible with their rules.
 A point to note here is the `Name servers` form. I am not an expert, so I just
 opted for their recommended option for correctness.
 Finally, I added my domain name next to `Name1`, and the public IP address
-of my webserver next to `IP1`.
+of my web server next to `IP1`.
 
 ![domain request 2](/img/playground/reqdom2.png)
 <p align="center"><i>Third checkbox please!</i></p>
@@ -129,7 +129,7 @@ options {
 }
 {% endhighlight %}
 
-At this point, I forwarded my port 53 for both TCP and UDP protocol in my
+At this point, I forwarded my port 53 for both TCP and UDP protocols in my
 router configuration.
 
 #### Generate and sign my keys
@@ -313,7 +313,7 @@ I'm not sure if this is really necessary but the article I followed considered
 important to teach how to protect ourselves from Zone Walking attacks. From what
 I understand, this attack is difficult but not impossible, and may allow one to
 get unauthorized access to our resource records by requesting DNS servers and by
-trying to revert hashes. To address this issue, it is recommend to update the
+trying to revert hashes. To address this issue, it is recommended to update the
 salt that we used when signing our zone file. This script<sup>[2][script]</sup>
 will automatically refresh the salt of our signed zone file, and can easily be
 automated using `cron`:
@@ -331,8 +331,8 @@ This will refresh the salt every week for you.
 
 Thanks for reading this short story! I took me a bit of trial and errors to get
 there, but I really enjoyed tinkering with DNSSEC, and as always it feels good
-to learn something new. Now that my site is available for everyone, I gave an
-access on my Raspberry to my friends and created them an user so they can play
+to learn something new. Now that my site is available for everyone, I gave 
+access on my Raspberry to my friends and created them a user, so they can play
 with the website as they want.
 
 The next story you don't want to miss will probably be realized on Mcdostone's
