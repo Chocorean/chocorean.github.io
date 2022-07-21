@@ -96,10 +96,10 @@ records** to my domain. I was decided to ignore the warning from EU.org and to
 enable DNSSEC anyway on my domain.
 
 ![empty dns](/img/playground/empty_dns.png)
-<p align="center"><i>Warning: use only if you know what you are doing!</i></p>
+<p align="center"><i>All my homies hate warnings</i></p>
 
 I eventually followed a tutorial<sup>[1][tuto]</sup> which was very helpful, but
-ran into a few errors which were not covered, so I will describe the full
+I ran into a few errors which were not covered, so I will describe the full
 process here.
 
 #### Setup a `bind` server
@@ -310,13 +310,13 @@ properly been enabled.
 #### Avoid Zone Walking attacks
 
 I'm not sure if this is really necessary but the article I followed considered
-important to teach how to protect ourselves from Zone Walking attacks. From what
-I understand, this attack is difficult but not impossible, and may allow one to
-get unauthorized access to our resource records by requesting DNS servers and by
-trying to revert hashes. To address this issue, it is recommended to update the
-salt that we used when signing our zone file. This script<sup>[2][script]</sup>
-will automatically refresh the salt of our signed zone file, and can easily be
-automated using `cron`:
+important to teach how to protect ourselves from *Zone Walking* attacks. From
+what I understand, this attack is difficult but not impossible, and may allow
+one to get unauthorized access to our resource records by requesting DNS servers
+and by trying to revert hashes. To address this issue, it is recommended to
+update the salt that we used when signing our zone file. This script
+<sup>[2][script]</sup> will automatically refresh the salt of our signed zone
+file, and can easily be automated using `cron`:
 
 *`$ sudo crontab -e`*
 
@@ -340,11 +340,11 @@ blog! Cya <3
 
 ### Resources
 
-Here are all the documents that helped me through this/
+Here are all the documents that helped me through this:
 
 - [DNSSEC tutorial][tuto]
-- [Fix for first `dnssec-signzone` error](https://readthefuckingmanual.net/error/2873$)
-- [Fix for second `dnssec-signzone` error](https://www.dark-hamster.com/server/how-to-solve-error-message-zone-zone_name-in-has-no-ns-records/$)
+- [Fix for first `dnssec-signzone` error](https://readthefuckingmanual.net/error/2873)
+- ~~[SUSPENDED] [Fix for second `dnssec-signzone` error](https://www.dark-hamster.com/server/how-to-solve-error-message-zone-zone_name-in-has-no-ns-records)~~
 - [dnssec-zonesigner repository][script]
 
 [eu.org]: https://nic.eu.org
