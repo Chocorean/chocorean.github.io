@@ -3,7 +3,6 @@ layout: post
 title:  "A playground for the boys"
 date:   2022-07-13 16:00:53 -0400
 author: Chocorean
-categories: [dnssec, free domain, eu.org, web server, hosting]
 tags: [dnssec, free domain, eu.org, web server, hosting]
 ---
 
