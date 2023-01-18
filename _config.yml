@@ -16,6 +16,7 @@ github_username:  chocorean
 
 domain: chocorean.github.io
 url: https://chocorean.github.io
+baseurl: /blog
 
 # Build settings
 theme: minima
