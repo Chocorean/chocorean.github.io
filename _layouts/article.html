@@ -1,0 +1,24 @@
+---
+layout: default
+permalink: /post/:title
+---
+
+<div class="post">
+    <div class="post-title-block">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div>
+            {{ page.date | date: "%B %d, %Y"}}
+            <ul class="post-tags">
+                {% for tag in page.tags %}
+                <li><a href="/tags/{{ tag }}" class="tag a-no-shadow"><span class="tag-name">{{ tag }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="post-content">
+        <h2><i><b>Today's special:</b> {{ page.subtitle }}</i></h2>
+        {{ content }}
+    </div>
+
+</div>

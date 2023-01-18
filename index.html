@@ -1,25 +1,32 @@
 ---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
 layout: default
 ---
+
+Welcome to my blog! I will not publish a lot here, but I hope the little I do
+will help people where I already struggled. Have fun!
+
+<hr class="sep" />
 
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
-
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Articles" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link a-no-shadow" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
+          <h4>{{ post.subtitle | escape }}</h4>
         </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
@@ -27,10 +34,5 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    {%- if false -%}
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-    {%- endif -%}
   {%- endif -%}
-
 </div>

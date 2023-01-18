@@ -1,17 +1,20 @@
 ---
-layout: post
-title:  "A playground for the boys"
-date:   2022-07-13 16:00:53 -0400
-author: Chocorean
+layout: article
+title:  A playground for the boys
+subtitle: Free domain name and DNSSEC!
+date: "July 13, 2022"
 tags: [dnssec, free domain, eu.org, web server, hosting]
 ---
 
-*<u>Disclaimer:</u> First article, hopefully my prose is not too bad. I decided
-to tell this short story, because I struggled a bit to correctly setup my EU.org
-domain name and I realized I was probably not the first in this situation.
-Enjoy!*
+---
+<br />
+*<u>Disclaimer:</u> First article, hopefully my prose is not too bad. I'm sorry 
+it's a bit long. I decided to tell this short story, because I struggled a bit
+to correctly setup my EU.org domain name and I realized I was probably not the
+first in this situation. Enjoy!*
 
-## **Today's special:** Free domain name and DNSSEC!
+---
+<br />
 
 I have always wanted to have my own domain and website to play with. One can
 easily find out it is possible to host a website with self-signed certificates
@@ -60,23 +63,24 @@ already filled, and I basically only had to choose my domain name. EU.org offers
 [EU.org policy](https://nic.eu.org/policy.html) to determine whether or not your
 project is compatible with their rules.
 
-![domain request 1](/img/playground/reqdom1.png)
-<p align="center"><i>Domain's organization information</i></p>
+![domain request 1](/assets/images/playground/reqdom1.png)
+<p class="img-legend">Domain's organization information.</p>
 
 A point to note here is the `Name servers` form. I am not an expert, so I just
 opted for their recommended option for correctness.
 Finally, I added my domain name next to `Name1`, and the public IP address
 of my web server next to `IP1`.
 
-![domain request 2](/img/playground/reqdom2.png)
-<p align="center"><i>Third checkbox please!</i></p>
+![domain request 2](/assets/images/playground/reqdom2.png)
+<p class="img-legend">Third checkbox please!</p>
 
 I then submitted my request! The EU.org team manually (*I guess?*) reviewed and
 eventually approved my request. It took a few days for me, less than two weeks
 IIRC. Once I got notified my domain and the appropriate records had been
 created, this is what my domains list looked like, at the exception of `DNSSEC`:
 
-![domains list](/img/playground/domains_list.png)
+![domains list](/assets/images/playground/domains_list.png)
+<p class="img-legend">My list of domain names.</p>
 
 *Su-per.* I've just got my first free domain name. It took a few days to spread
 across the DNS servers, as expected. I was regularly checking [if my domain was yet resolved](https://dnschecker.org/)
@@ -95,8 +99,8 @@ I was a bit lost and started to browse around, looking for a way to add **DS
 records** to my domain. I was decided to ignore the warning from EU.org and to
 enable DNSSEC anyway on my domain.
 
-![empty dns](/img/playground/empty_dns.png)
-<p align="center"><i>All my homies hate warnings</i></p>
+![empty dns](/assets/images/playground/empty_dns.png)
+<p class="img-legend">All my homies hate warnings.</p>
 
 I eventually followed a tutorial<sup>[1][tuto]</sup> which was very helpful, but
 I ran into a few errors which were not covered, so I will describe the full
@@ -200,7 +204,7 @@ Signing time in seconds:                 0.003
 Signatures per second:                2100.210
 Runtime in seconds:                      0.016
 {% endhighlight %}
-<p align="center"><i>Note that we use a random salt here.</i></p>
+<p class="img-legend">Note that we use a random salt here.</p>
 
 At this point, I needed to tell `bind` to use the new file
 `example.eu.org.zone.signed`:
@@ -291,8 +295,8 @@ example.eu.org. 3600 IN DNSKEY 257 3 13 aGYV9tajrYYURYCvdTte4yvRJOgTlTSnuhHoXcGo
 ; Activate: 20220715005913 (Thu Jul 14 20:59:13 2022)
 example.eu.org. 3600 IN DNSKEY 256 3 13 8wsphstJI+JVEih2myGoqyvXjTQ0vU67rm9Os06G8ZGyao8GyHDzl4Tz fyBsHqW8D6ifKlmDjro5y7d4IivrgA==
 {% endhighlight %}
-<p align="center"><i>All lines starting with `;` are comments and should be
-ignored.</i></p>
+<p class="img-legend">All lines starting with `;` are comments and should be
+ignored.</p>
 
 The line with the `257` has to be the primary DS record, so I added it first.
 and then the second one.
@@ -301,8 +305,8 @@ Again, it may take a few minutes for changes to take effect, but it looked like
 it had been instantly processed for me. As soon as I submitted these records, I
 checked again if major DNS servers were now resolving my domains: 
 
-![dnschecker](/img/playground/dnschecker.png)
-<p align="center"><i>After a month of big sad, big joy was here</i></p>
+![dnschecker](/assets/images/playground/dnschecker.png)
+<p class="img-legend">After a month of big sad, big joy was here.</p>
 
 There are also tools like [DNSViz](https://dnsviz.net) to make sure DNSSEC has
 properly been enabled.
@@ -323,7 +327,7 @@ file, and can easily be automated using `cron`:
 {% highlight plain %}
 0 0 * * 0 /path/to/zonesigner.sh example.eu.org example.eu.org.zone
 {% endhighlight %}
-<p align="center"><i>Don't forget to <code>chmod</code> this script!</i></p>
+<p class="img-legend">Don't forget to <code>chmod</code> this script!</p>
 
 This will refresh the salt every week for you.
 

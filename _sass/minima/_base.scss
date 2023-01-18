@@ -111,7 +111,6 @@ a {
   }
 
   &:hover {
-    color: $text-color;
     text-decoration: underline;
   }
 
@@ -121,6 +120,12 @@ a {
     .username {
       text-decoration: underline;
     }
+  }
+}
+
+a.a-no-shadow {
+  &:visited {
+    color: $brand-color !important;
   }
 }
 
@@ -192,7 +197,6 @@ pre {
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
-  background-color: rgba(49, 53, 60, 0.4);
   @extend %clearfix;
 
   @include media-query($on-laptop) {
