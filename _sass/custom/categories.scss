@@ -1,0 +1,16 @@
+#categories {
+    list-style-type: none;
+}
+
+#categories h2 {
+    margin-bottom: 0;
+}
+
+#categories ul {
+    list-style-type: none;
+}
+
+#categories ul > li:before {
+    content: "\00BB";
+    margin-right: 1rem;
+}

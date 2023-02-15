@@ -4,6 +4,7 @@ title:  A playground for the boys
 subtitle: Free domain name and DNSSEC!
 date: "July 13, 2022"
 tags: [dnssec, free domain, eu.org, web server, hosting]
+categories: ["rust"]
 ---
 
 ---
