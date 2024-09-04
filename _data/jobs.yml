@@ -1,0 +1,49 @@
+- title: Software Engineer
+  company: NIST
+  website: https://www.nist.gov/
+  city: Gaithersburg, MD
+  timespan: January 2024 - Now
+  desc: I am currently responsible for the maintenance of the <a href="https://samate.nist.gov/SARD">Software Assurance Reference Dataset</a>, which encompasses
+        dependencies and security updates, developping new features, and adding test cases to the database. The SARD
+        is developped with <strong>Ruby on Rails</strong>.
+
+- title: Software Engineer
+  company: NIST
+  website: https://www.nist.gov/
+  city: Gaithersburg, MD
+  timespan: June 2023 - January 2024
+  desc: I developed two <strong>Rust full-stack applications</strong> for running human evaluations of <strong>AI-generated content</strong>, such as
+        texts and pictures. The goal was to gather human feedback before training AI systems to detect whether a
+        document was AI-generated. They are not available to the public at the moment.
+
+- title: Computer Scientist
+  company: NIST
+  website: https://www.nist.gov/
+  city: Gaithersburg, MD
+  timespan: June 2022 - June 2023
+  desc: My mission was to automate the generation of
+        <strong>deepfakes</strong> using several open-source <strong>Deep Learning</strong> tools, such as
+        <a href="https://github.com/iperov/DeepFaceLab" target="_blank">DeepFaceLab</a> or <a
+          href="https://github.com/deepfakes/faceswap" target="_blank">FaceSwap</a>. It resulted in many
+        thousands of videos for the project's dataset. I oversaw a student, helping him to run deepfakes tools on
+        <strong>GPU-accelerated hardware</strong>, with <strong>Python</strong>, virtual environments, code reviews, and
+        best practices for coding. I was also involved in several workshops, presenting the dataset's generation
+        pipeline and content to performers and stakeholders.
+
+- title: Software Engineer
+  company: NIST
+  website: https://www.nist.gov/
+  city: Gaithersburg, MD
+  timespan: Jan 2020 - Jan 2022
+  desc: I was a member of the team dedicated to the <a href="https://actev.nist.gov" target="_blank">ActEV challenge</a>
+        sponsored by IARPA. I am responsible for maintenance and development of new features for two projects, an abstract
+        CLI that our partners have to implement, then submit to our pipeline, and a scorer software which evaluates our
+        partners software's performance. Additionally, I had to reimagine the CI for the abstract CLI because it became harder
+        to test. I am also responsible for the generation of some ActEV datasets.
+
+- title: Cyber-security trainee
+  company: Excellium Services
+  website: https://excellium-services.com/
+  city: Contern, Luxembourg
+  timespan: March 2019 - September 2019
+  desc: The goal of the internship was to create from scratch a data leak orchestration tool, which would store any leaked credential of the company's customers, for monitoring purposes. I designed the software as a web API for ease of use by the other tools of the company. I have used an analytical database called <strong>ClickHouse</strong>, which is currently holding billions of leaked credentials and has crazy fast response times. It is currently part of the firm's monitoring offer.

@@ -1,0 +1,202 @@
+#cv {
+  font-family: "Lato", sans-serif;
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+  padding: .8rem;
+  width: 80%;
+  margin: auto;
+
+  a {
+    color: #4CAF50;
+
+    :visited {
+      color: #4CAF50;
+    }
+  }
+
+  h3,
+  h4,
+  h5 {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+  }
+
+  strong {
+    font-style: italic;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #left {
+    padding-right: 1rem;
+    text-align: center;
+    width: 20%;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+  }
+
+  #photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 128px;
+    padding: 1rem;
+  }
+
+  .left-block {
+    width: 100%;
+
+    h4 {
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      text-align: right;
+    }
+
+    #links {
+      display: flex;
+      justify-content: end;
+
+      * {
+        margin-left: 0.25rem;
+        color: white;
+      }
+    }
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  svg.logo {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #right {
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    h4 {
+      display: block;
+    }
+
+    .right-block {
+      h4 {
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      h5 {
+        text-decoration: underline;
+        color: white;
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      ul {
+        // list-style: none;
+        padding-left: 0;
+        text-align: left;
+
+        li {
+          font-size: 0.875rem;
+        }
+      }
+    }
+
+    .job-title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .job-title p:first-child {
+      text-decoration: underline;
+    }
+
+    .job-title p:nth-child(2) {
+      font-size: 0.7rem;
+    }
+
+    .job-title p:nth-child(3) {
+      font-size: 0.7rem;
+    }
+
+    .job-desc {
+      font-size: 0.9rem;
+      color: rgb(234, 234, 234);
+    }
+  }
+}
+
+
+
+// #cv #right {
+//   text-align: left;
+// }
+
+// #cv #right p {
+//   margin-bottom: .5rem;
+// }
+
+// #cv #right>.row {
+//   margin-bottom: .5rem;
+// }
+
+// #cv #right>.row>.row {
+//   margin-bottom: 0.3rem;
+// }
+
+// #cv h3 {
+//   color: #4CAF50;
+// }
+
+// #cv h3,
+// #cv h4,
+// #cv h5 {
+//   font-weight: bolder;
+// }
+
+// #cv h5 {
+//   font-size: 1rem;
+//   text-decoration: underline;
+// }
+
+// #cv .skills {
+//   font-size: .9rem;
+// }
+
+// #cv .plain {
+//   color: rgb(64, 64, 64);
+//   text-decoration: none;
+// }
+
+// #cv .plain:hover {
+//   color: rgb(64, 64, 64);
+//   text-decoration: none;
+// }
+
+// #cv .plain:visited {
+//   color: rgb(64, 64, 64);
+//   text-decoration: none;
+// }

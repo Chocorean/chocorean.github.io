@@ -1,0 +1,25 @@
+.header {
+  background-color: #4CAF50;
+  min-height: $spacing-unit * 1.865;
+  position: relative;
+}
+
+.trigger>ul {
+  list-style: none;
+}
+
+.trigger a {
+  color: white;
+}
+
+.trigger a:visited {
+  color: white;
+}
+
+.trigger a:hover {
+  color: white;
+}
+
+.active {
+  text-decoration: underline;
+}

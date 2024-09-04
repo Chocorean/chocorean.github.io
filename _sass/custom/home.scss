@@ -5,5 +5,10 @@
 .sep {
     width: 30%;
     margin-left: 35%;
-    margin-top: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a:visited {
+    color: $brand-color;
 }

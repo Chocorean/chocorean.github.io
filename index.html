@@ -1,7 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 ---
 
@@ -10,29 +8,18 @@ will help people where I already struggled. Have fun!
 
 <hr class="sep" />
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+I am still building this website:
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Articles" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link a-no-shadow" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-          <h4>{{ post.subtitle | escape }}</h4>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
-</div>
+<style>
+  .done {
+    text-decoration: line-through;
+  }
+</style>
+
+<ul>
+  <li class="done"> resume</li>
+  <li class="done">3d printer 1st draft</li>
+  <li>mods 1st draft</li>
+  <li>blog home page: css</li>
+  <li>redirect chocorp.net here</li>
+</ul>

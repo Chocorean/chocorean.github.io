@@ -1,0 +1,116 @@
+---
+layout: fullpage
+title: Resume
+permalink: /resume
+---
+<div id="cv">
+  <h1>Baptiste CHOCOT - <strong>Software & Cyber-Security Engineer</strong></h1>
+  <br>
+  <div class="row">
+    <div id="left">
+      <div class="centered">
+        <img id="photo" src="/assets/images/resume/tete.png" alt="Chocorean" />
+      </div>
+      <div class="left-block">
+        <h4>Links</h4>
+        <div id="links">
+          <a href="mailto:baptiste.chocot+github.io@pm.me?subject=Hello there!">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" data-attribution="cc0-icons"
+              viewBox="0 0 24 24" class="logo" width="32" height="32">
+              <path
+                d="M19.778 5H4.222A2.222 2.222 0 0 0 2 7.222v9.556C2 18.005 2.995 19 4.222 19h15.556A2.222 2.222 0 0 0 22 16.778V7.222A2.222 2.222 0 0 0 19.778 5Z" />
+              <path d="M22 7.5s-6.5 4.7-8 5.6c-1.5.9-2.5.9-4 0S2 7.5 2 7.5" />
+            </svg>
+          </a>
+          <a href="https://github.com/Chocorean" target="_blank"><img src="/assets/images/resume/github-mark-white.png"
+              class="logo" alt="GitHub" /></a>
+          <a href="https://www.root-me.org/?chocot" target="_blank"><img
+              src="https://www.root-me.org/IMG/logo/siteon0.svg" alt="root-me.org" class="logo"
+              style="filter: invert(1)" /></a>
+          <a href="https://linkedin.com/in/baptiste-chocot-82188a149" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+              class="logo" width="32" height="32" focusable="false">
+              <path
+                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="left-block">
+        <h4>Soft skills</h4>
+        <p>Autonomous</p>
+        <p>Flexible</p>
+        <p>Meticulous</p>
+        <p>Curiosity-driven</p>
+      </div>
+      <div class="left-block">
+        <h4>Misc</h4>
+        <p><a href="/print">3D-printing</a></p>
+        <p>
+          <a href="https://www.raspberrypi.org">Raspberry PIs</a>
+        </p>
+        <p>
+          <a href="https://clickhouse.tech" target="_blank">ClickHouse</a> by Yandex
+        </p>
+        <p>Minecraft modding with <a href="https://files.minecraftforge.net" target="_blank">Forge</a>
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div id="right" class="col-md-9">
+      <div class="right-block">
+        <h4>About me</h4>
+        <p class="job-desc">&emsp;I am a French IT engineer currently working at <a href="https://www.nist.gov">NIST</a>
+          as a <strong>Software Developer</strong>. My main skills are software development and a good base for cyber
+          security. I enjoy tinkering with technology, climbing, and cooking the most.</p>
+      </div>
+      <div class="right-block">
+        <h4>Former positions</h4>
+        {% for job in site.data.jobs %}
+        {% include job_desc.html title=job.title company=job.company website=job.website city=job.city
+        timespan=job.timespan desc=job.desc %}
+        {% endfor %}
+      </div>
+      <div class="right-block">
+        <h4>Technical skills</h4>
+        <div class="row" style="justify-content: space-between">
+          <div class="right-block">
+            <h5>Very confortable with:</h5>
+            <ul class="skills">
+              <li>Python, Shell</li>
+              <li>UNIX-like systems</li>
+              <li>Ruby and Rails</li>
+              <li>Git, Docker</li>
+            </ul>
+          </div>
+          <div class="right-block">
+            <h5>Confortable with:</h5>
+            <ul class="skills">
+              <li>Rust 🦀</li>
+              <li>C/C++, Java, PHP</li>
+              <li>SQL databases, ClickHouse</li>
+              <li>Various cyber-security concepts</li>
+            </ul>
+          </div>
+          <div class="right-block">
+            <h5>Already used:</h5>
+            <ul class="skills">
+              <li>Monitoring (Nagios, Grafana)</li>
+              <li>VBox, VMWare</li>
+              <li>Firewalls (iptables)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-block">
+        <h4>Education</h4>
+        {% for edu in site.data.edu %}
+        {% include job_desc.html title=edu.title company=edu.company website=edu.website city=edu.city
+        timespan=edu.timespan desc=edu.desc %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

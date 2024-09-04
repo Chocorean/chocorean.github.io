@@ -4,12 +4,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Choconews
-description: True choconews for once.
+title: Chocorean
+#description:
 
 author:
   name: Chocorean
-  email: chocorean -at- pm.me
+  email: chocorean+github.io@pm.me
   mailto: chocorean@pm.me
 #twitter_username: jekyllrb
 github_username:  chocorean
@@ -25,7 +25,7 @@ plugins:
 collections:
   posts:
     output: true
-    permalink: /articles/:title
+    permalink: /blog/:title
 
 # Exclude from processing.
 # The following items will not be processed, by default.

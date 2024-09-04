@@ -1,0 +1,14 @@
+- text: Home
+  url: /
+
+- text: Micro-Blog
+  url: /blog
+
+- text: 3D-Printing
+  url: /print
+
+- text: Modding
+  url: /mods
+
+- text: Resume
+  url: /resume

@@ -1,0 +1,41 @@
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  >li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.blog-post {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #313131;
+}
+
+.blog-post:hover {
+  background-color: #404040;
+  cursor: pointer;
+}
+
+.blog-link:visited {
+  color: $brand-color;
+}
+
+.blog-link:hover {
+  text-decoration: none;
+}
+
+.blog-post h3 {
+  font-size: $large-font-size;
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
