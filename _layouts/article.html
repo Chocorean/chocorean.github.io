@@ -10,7 +10,8 @@ permalink: /post/:title
             {{ page.date | date: "%B %d, %Y"}}
             <ul class="post-tags">
                 {% for tag in page.tags %}
-                <li><a href="/tags/{{ tag }}" class="tag a-no-shadow"><span class="tag-name">{{ tag }}</span></a></li>
+                <li><a href="/blog/tags/{{ tag }}" class="tag a-no-shadow"><span class="tag-name">{{ tag }}</span></a>
+                </li>
                 {% endfor %}
             </ul>
         </div>
