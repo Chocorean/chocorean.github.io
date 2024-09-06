@@ -258,6 +258,10 @@ ul.post-tags li {
       @include relative-font-size(1.125);
     }
   }
+
+  img.dark-img {
+    filter: invert(1);
+  }
 }
 
 .img-legend {

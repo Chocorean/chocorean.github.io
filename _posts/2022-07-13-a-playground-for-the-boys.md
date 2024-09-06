@@ -6,8 +6,6 @@ date: "July 13, 2022"
 tags: [dnssec, free domain, eu.org, web server, hosting]
 ---
 
----
-<br />
 *<u>Disclaimer:</u> First article, hopefully my prose is not too bad. I'm sorry 
 it's a bit long. I decided to tell this short story, because I struggled a bit
 to correctly setup my EU.org domain name and I realized I was probably not the
@@ -63,7 +61,7 @@ already filled, and I basically only had to choose my domain name. EU.org offers
 [EU.org policy](https://nic.eu.org/policy.html) to determine whether or not your
 project is compatible with their rules.
 
-![domain request 1](/assets/images/playground/reqdom1.png)
+![domain request 1](/assets/images/playground/reqdom1.png){:.dark-img}
 <p class="img-legend">Domain's organization information.</p>
 
 A point to note here is the `Name servers` form. I am not an expert, so I just
@@ -71,7 +69,7 @@ opted for their recommended option for correctness.
 Finally, I added my domain name next to `Name1`, and the public IP address
 of my web server next to `IP1`.
 
-![domain request 2](/assets/images/playground/reqdom2.png)
+![domain request 2](/assets/images/playground/reqdom2.png){:.dark-img}
 <p class="img-legend">Third checkbox please!</p>
 
 I then submitted my request! The EU.org team manually (*I guess?*) reviewed and
@@ -79,7 +77,7 @@ eventually approved my request. It took a few days for me, less than two weeks
 IIRC. Once I got notified my domain and the appropriate records had been
 created, this is what my domains list looked like, at the exception of `DNSSEC`:
 
-![domains list](/assets/images/playground/domains_list.png)
+![domains list](/assets/images/playground/domains_list.png){:.dark-img}
 <p class="img-legend">My list of domain names.</p>
 
 *Su-per.* I've just got my first free domain name. It took a few days to spread
@@ -99,7 +97,7 @@ I was a bit lost and started to browse around, looking for a way to add **DS
 records** to my domain. I was decided to ignore the warning from EU.org and to
 enable DNSSEC anyway on my domain.
 
-![empty dns](/assets/images/playground/empty_dns.png)
+![empty dns](/assets/images/playground/empty_dns.png){:.dark-img}
 <p class="img-legend">All my homies hate warnings.</p>
 
 I eventually followed a tutorial<sup>[1][tuto]</sup> which was very helpful, but
