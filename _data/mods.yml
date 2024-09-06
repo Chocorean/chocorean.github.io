@@ -1,0 +1,14 @@
+- name: AuthMod
+  desc: is an authentication Forge mod which allows modded server owners to accept free versions of Minecraft on their server without wondering about security issues. It forces players to login with a password dedicated to the server.
+  webpage: https://www.curseforge.com/minecraft/mc-mods/authmod
+  repo: https://github.com/Chocorean/authmod
+
+- name: MoreCommands
+  desc: is a Forge mod that adds a few command to your modded Minecraft server
+  webpage: https://www.curseforge.com/minecraft/mc-mods/more-commands-mod
+  repo: https://github.com/Chocorean/morecommands
+
+- name: MoreSnowballs
+  desc: adds a few snowballs with unique effects
+  webpage: https://www.curseforge.com/minecraft/mc-mods/more-snowballs
+  repo: https://github.com/Chocorean/moresnowballs

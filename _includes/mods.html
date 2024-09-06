@@ -1,0 +1,11 @@
+<ol id="mods-list">
+  {% for mod in site.data.mods %}
+  <li>
+    <a href="{{ mod.repo }}">{{ mod.name }}</a> {{ mod.desc }}
+    <a href="{{ mod.webpage }}">Curseforge page.</a>
+  </li>
+  {% if forloop.last == false %}
+  <hr class="sep" />
+  {% endif %}
+  {% endfor %}
+</ol>

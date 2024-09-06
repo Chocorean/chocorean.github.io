@@ -1,0 +1,31 @@
+#mods-list {
+  margin: 0;
+  list-style: none;
+
+  li {
+    counter-increment: item;
+  }
+
+  .sep {
+    margin-top: 2rem;
+  }
+
+  li:before {
+    content: counter(item) ".";
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+
+  .mod {
+    padding: .3rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    img {
+      max-width: 20%;
+    }
+  }
+}
