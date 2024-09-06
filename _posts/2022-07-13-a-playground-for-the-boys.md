@@ -4,7 +4,6 @@ title:  A playground for the boys
 subtitle: Free domain name and DNSSEC!
 date: "July 13, 2022"
 tags: [dnssec, free domain, eu.org, web server, hosting]
-categories: ["rust"]
 ---
 
 ---
@@ -349,7 +348,7 @@ Here are all the documents that helped me through this:
 
 - [DNSSEC tutorial][tuto]
 - [Fix for first `dnssec-signzone` error](https://readthefuckingmanual.net/error/2873)
-- ~~[SUSPENDED] [Fix for second `dnssec-signzone` error](https://www.dark-hamster.com/server/how-to-solve-error-message-zone-zone_name-in-has-no-ns-records)~~
+- [Fix for second `dnssec-signzone` error](https://www.dark-hamster.com/server/how-to-solve-error-message-zone-zone_name-in-has-no-ns-records)
 - [dnssec-zonesigner repository][script]
 
 [eu.org]: https://nic.eu.org

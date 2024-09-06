@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tags
-permalink: /tags
+permalink: /blog/tags
 ---
 
 <div class="wrapper">
@@ -9,7 +9,9 @@ permalink: /tags
 
     <ul class="post-tags">
         {% for tag in site.tags %}
-            <li><a href="/tags/{{ tag[0] }}" class="tag a-no-shadow"><span class="tag-name">{{ tag[0] }}</span></li>
+        <li><a href="/blog/tags/{{ tag.name | replace: ' ', '-' | replace: '.', '-' }}" class="tag a-no-shadow"><span
+                    class="tag-name">{{ tag.name }}</span>
+        </li>
         {% endfor %}
     </ul>
 </div>
