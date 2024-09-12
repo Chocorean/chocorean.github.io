@@ -1,0 +1,15 @@
+- name: Chocorp
+  link: https://analytics.chocorp.net
+  expected: 200
+
+- name: Chocoprint
+  link: https://print.chocorp.net
+  expected: 200
+
+- name: Chocolo
+  link: https://chocolo.chocorp.net
+  expected: 200
+
+- name: Inteam
+  link: https://inteam.eu.org
+  expected: 200

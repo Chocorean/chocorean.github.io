@@ -12,3 +12,26 @@
 a:visited {
     color: $brand-color;
 }
+
+#services {
+    margin: auto;
+    width: 80%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    th {
+        background-color: $brand-color;
+    }
+
+    tr {
+        background-color: $background-color;
+    }
+
+    .success {
+        background-color: green;
+    }
+
+    .danger {
+        background-color: red;
+    }
+}

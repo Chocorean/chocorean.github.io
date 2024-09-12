@@ -9,12 +9,28 @@ already struggled, or at least entertain. Enjoy!
 
 <hr class="sep" />
 
-Useful links:
-
-<ul>
-  <li><a href="https://chocolo.chocorp.net">Chocolo</a> - Inteam's drinking game</li>
-  <li><a href="https://print.chocorp.net">Chocoprint</a> - my Octoprint instance</li>
-</ul>
+<div>
+  Useful links:
+  <ul>
+    <li><a href=" https://chocolo.chocorp.net">Chocolo</a> - Inteam's drinking game</li>
+    <li><a href="https://print.chocorp.net">Chocoprint</a> - my Octoprint instance</li>
+  </ul>
+</div>
+<div>
+  Services:
+  <table id="services">
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for service in site.data.services %}
+      {% include service.html %}
+      {% endfor %}
+  </table>
+</div>
 
 <hr class="sep" />
 
@@ -36,3 +52,10 @@ I am still building this website:
   <li>accueil</li>
   <li>responsive resume</li>
 </ul>
+
+<script src="{{ 'assets/js/services.js' | relative_url }}"></script>
+<script>
+  {% for service in site.data.services %}
+  serviceStatus('{{ service.name }}', '{{ service.link }}', {{ service.expected }});
+  {% endfor %}
+</script>
