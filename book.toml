@@ -1,0 +1,15 @@
+[book]
+title = "blog"
+authors = ["Chocorean"]
+language = "en"
+description = "Chocorean's blog"
+
+[rust]
+edition = "2024"
+
+[output.html]
+default-theme = "rust"
+additional-css = ["theme/css/custom.css", "theme/css/breen.css"]
+additional-js  = ["js/hide-themes.js"]
+site-url = "https://chocorean.github.io/"
+git-repository-url = "https://github.com/Chocorean/chocorean.github.io"
