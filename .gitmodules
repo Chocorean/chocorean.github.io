@@ -1,0 +1,3 @@
+[submodule "mdbook-blog-preprocessor"]
+	path = mdbook-blog-preprocessor
+	url = ssh://git@codeberg.org/chocorean/mdbook-blog-preprocessor.git
