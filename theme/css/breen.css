@@ -1,61 +1,61 @@
 /* Overwriting rust theme because I can't add a theme without rebundling everything else. */
 .rust {
-    --bg: hsl(210, 25%, 8%);
-    --fg: #c5c5c5;
+    --bg: hsl(263, 30%, 7%);
+    --fg: hsl(255, 30%, 87%);
 
-    --sidebar-bg: #14191f;
-    --sidebar-fg: #c8c9db;
-    --sidebar-non-existant: #5c6773;
-    --sidebar-active: #ffb454;
-    --sidebar-spacer: #2d334f;
+    --sidebar-bg: hsl(263, 24%, 12%);
+    --sidebar-fg: hsl(260, 30%, 88%);
+    --sidebar-non-existant: hsl(265, 12%, 46%);
+    --sidebar-active: #f2b86c;
+    --sidebar-spacer: hsl(265, 17%, 22%);
 
     --scrollbar: var(--sidebar-fg);
 
-    --icons: #737480;
-    --icons-hover: #b7b9cc;
+    --icons: #a390c8;
+    --icons-hover: #e7dfff;
 
-    --links: #0096cf;
+    --links: #f7c376;
 
-    --inline-code-color: #ffb454;
+    --inline-code-color: #c9a564;
 
-    --theme-popup-bg: #14191f;
-    --theme-popup-border: #5c6773;
-    --theme-hover: #191f26;
+    --theme-popup-bg: #171328;
+    --theme-popup-border: #4f446c;
+    --theme-hover: #241d36;
 
-    --quote-bg: hsl(226, 15%, 17%);
-    --quote-border: hsl(226, 15%, 22%);
+    --quote-bg: hsl(264, 22%, 16%);
+    --quote-border: hsl(265, 22%, 24%);
 
-    --warning-border: #ff8e00;
+    --warning-border: #ff8d52;
 
-    --table-border-color: hsl(210, 25%, 13%);
-    --table-header-bg: hsl(210, 25%, 28%);
-    --table-alternate-bg: hsl(210, 25%, 11%);
+    --table-border-color: hsl(265, 18%, 17%);
+    --table-header-bg: hsl(266, 18%, 23%);
+    --table-alternate-bg: hsl(264, 18%, 10%);
 
-    --searchbar-border-color: #848484;
-    --searchbar-bg: #424242;
-    --searchbar-fg: #fff;
-    --searchbar-shadow-color: #d4c89f;
-    --searchresults-header-fg: #666;
-    --searchresults-border-color: #888;
-    --searchresults-li-bg: #252932;
-    --search-mark-bg: #e3b171;
+    --searchbar-border-color: #756891;
+    --searchbar-bg: #261d35;
+    --searchbar-fg: #f3eeff;
+    --searchbar-shadow-color: #7cf2b0;
+    --searchresults-header-fg: #d9cef5;
+    --searchresults-border-color: #7a6ca0;
+    --searchresults-li-bg: #1d172d;
+    --search-mark-bg: #78efaa;
 
     --color-scheme: dark;
 
     /* Same as `--icons` */
-    --copy-button-filter: invert(45%) sepia(6%) saturate(621%) hue-rotate(198deg) brightness(99%) contrast(85%);
+    --copy-button-filter: invert(62%) sepia(11%) saturate(480%) hue-rotate(216deg) brightness(96%) contrast(87%);
     /* Same as `--sidebar-active` */
-    --copy-button-filter-hover: invert(68%) sepia(55%) saturate(531%) hue-rotate(341deg) brightness(104%) contrast(101%);
+    --copy-button-filter-hover: invert(74%) sepia(45%) saturate(390%) hue-rotate(344deg) brightness(106%) contrast(100%);
 
-    --footnote-highlight: #2668a6;
+    --footnote-highlight: #5d7ef4;
 
-    --overlay-bg: rgba(33, 40, 48, 0.4);
+    --overlay-bg: rgba(18, 12, 29, 0.54);
 
-    --blockquote-note-color: #74b9ff;
-    --blockquote-tip-color: #09ca09;
-    --blockquote-important-color: #d3abff;
-    --blockquote-warning-color: #f0b72f;
-    --blockquote-caution-color: #f21424;
+    --blockquote-note-color: #88a7ff;
+    --blockquote-tip-color: #7cf1b3;
+    --blockquote-important-color: #d1b7ff;
+    --blockquote-warning-color: #ffbf6a;
+    --blockquote-caution-color: #ff6e7c;
 
-    --sidebar-header-border-color: #c18639;
+    --sidebar-header-border-color: #7cf1b3;
 }
