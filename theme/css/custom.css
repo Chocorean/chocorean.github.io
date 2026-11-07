@@ -13,3 +13,46 @@ h1, h2, h3, h4, h5, h6 {
     background-color: hsl(263, 30%, 14%);
     border-radius: 0.25rem;
 }
+
+/* homepage */
+
+#articles {
+    margin-top: 8rem;
+    text-align: left;
+    list-style: none;
+    background-color: var(--sidebar-bg);
+    padding: 0;
+    border-radius: 0.5rem;
+}
+
+#articles header {
+    border-radius: 0.5rem;
+    background-color: hsl(263, 30%, 14%); /* taken from .hljs */
+    padding: 2rem 2rem 0 2rem;
+}
+
+#articles .article-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#articles header h3,
+#articles header time,
+#articles header i {
+    margin: 0;
+    line-height: 1.2;
+}
+
+#articles header time {
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+#articles h2 {
+    margin-block-start: 1rem;
+}
+
+#articles p {
+    padding: 0 2rem 2rem 2rem;
+}

@@ -1,7 +1,7 @@
 <style>
 #mdbook-content {
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 </style>
 
