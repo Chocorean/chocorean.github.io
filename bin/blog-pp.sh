@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-PP="mdbook-index-pp"
-BIN="${PP}/target/release/mdbook-index-pp"
+PP="mdbook-blog-preprocessor"
+BIN="${PP}/target/release/${PP}"
 
 if [ ! -f "${BIN}" ]
 then
