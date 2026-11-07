@@ -14,11 +14,12 @@ additional-js  = ["js/hide-themes.js"]
 site-url = "https://chocorean.github.io/"
 git-repository-url = "https://github.com/Chocorean/chocorean.github.io"
 
-[preprocessor.index]
+[preprocessor.index-pp]
 renderers = ["html"]
-command = "true"
+# command = "../mdbook-index-pp/target/debug/mdbook-index-pp"
+command = "bash bin/mdbook-index-pp.sh"
 
-[preprocessor.article]
-after = [ "index" ]
-renderers = ["html"]
-command = "true"
+# [preprocessor.article]
+# after = ["index"]
+# renderers = ["html"]
+# command = "true"

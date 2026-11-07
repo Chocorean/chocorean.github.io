@@ -1,10 +1,11 @@
 ---
 title:  A playground for the boys
+intro: How I got a domain name for free, and its configuration. I have almost not edited the original post. The jokes are still making me laugh.
 subtitle: Free domain name and DNSSEC!
-date: "July 13, 2022"
+date: 2022-07-13
 tags: [dnssec, free domain, eu.org, web server, hosting]
 category: web
-name: 0_playground
+filename: 0_playground
 ---
 
 > [!IMPORTANT]
