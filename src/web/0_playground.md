@@ -35,9 +35,13 @@ This story describes the process I had to go through in order to get a fully wor
 
 ## Prerequisites
 I will not cover how to:
+<div class="list-no-style">
+
 - [x] run a web server on a local host;
 - [x] do port forwarding on your router;
 - [x] get free SSL certificates signed by a CA (check out [certbot](https://certbot.eff.org/)).
+
+</div>
 
 I am running a very simple [Flask](https://flask.palletsprojects.com) web server on a Raspberry PI 4.
 
