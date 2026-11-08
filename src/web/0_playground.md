@@ -3,8 +3,6 @@ title:  A playground for the boys
 intro: How I got a domain name for free, and its configuration. I have almost not edited the original post. The jokes are still making me laugh.
 subtitle: Free domain name and DNSSEC!
 date: 2022-07-13
-category: web
-filename: 0_playground
 ---
 
 > [!IMPORTANT]
