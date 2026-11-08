@@ -55,33 +55,18 @@ Make sure you read [EU.org policy](https://nic.eu.org/policy.html) to determine 
 
 {{ figure "reqdom1.png" "EU.org first form" "Domain's organization information." }}
 
-<figure style="text-align: center;">
-  <img src="/assets/web/0_playground/reqdom1.png" alt="EU.org first form">
-  <figcaption>Domain's organization information.</figcaption>
-</figure>
-
 A point to note here is the `Name servers` form.
 I am not an expert, so I just opted for their recommended option for correctness.
 Finally, I added my domain name next to `Name1`, and the public IP address of my web server next to `IP1`.
 
 {{ figure "reqdom2.png" "EU.org second form" "Third checkbox please!" }}
 
-<figure style="text-align: center;">
-  <img src="/assets/web/0_playground/reqdom2.png" alt="EU.org second form">
-  <figcaption>Third checkbox please!</figcaption>
-</figure>
-
 I then submitted my request!
 The EU.org team manually (*I guess?*) reviewed and eventually approved my request.
 It took a few days for me, less than two weeks IIRC.
 Once I got notified my domain and the appropriate records had been created, this is what my domains list looked like, at the exception of `DNSSEC`:
 
-{{ figure "domains_list.png" "My EU.org domain list" "My list of domain names." }}
-
-<figure style="text-align: center;">
-  <img src="/assets/web/0_playground/domains_list.png" alt="Domain list">
-  <figcaption>My list of domain names.</figcaption>
-</figure>
+{{ figure "domains_list.png" "My EU.org domain list" "Have I forgotten to hide my domain? Surely no..." }}
 
 *Su-per.* (French accent)
 
@@ -101,11 +86,6 @@ I was a bit lost and started to browse around, looking for a way to add **DS rec
 I was decided to ignore the warning from EU.org and to enable DNSSEC anyway on my domain.
 
 {{ figure "empty_dns.png" "My EU.org empty DNS config page" "All my homies hate warnings." }}
-
-<figure style="text-align: center;">
-  <img src="/assets/web/0_playground/empty_dns.png" alt="My EU.org empty DNS config page">
-  <figcaption>All my homies hate warnings.</figcaption>
-</figure>
 
 I eventually followed a tutorial<sup>[1](https://www.digitalocean.com/community/tutorials/how-to-setup-dnssec-on-an-authoritative-bind-dns-server-2)</sup> which was very helpful, but I ran into a few errors which were not covered, so I will describe the full process here.
 
@@ -300,11 +280,6 @@ Again, it may take a few minutes for changes to take effect, but it looked like 
 As soon as I submitted these records, I checked again if major DNS servers were now resolving my domains: 
 
 {{ figure "dnschecker.png" "DNSChecker.org resolving my domain" "After a month of big sad, big joy was here." }}
-
-<figure style="text-align: center;">
-  <img src="/assets/web/0_playground/dnschecker.png" alt="DNSChecker.org resolving my domain">
-  <figcaption>After a month of big sad, big joy was here.</figcaption>
-</figure>
 
 There are also tools like [DNSViz](https://dnsviz.net) to make sure DNSSEC has properly been enabled.
 
