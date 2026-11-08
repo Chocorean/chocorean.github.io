@@ -58,4 +58,7 @@
     --blockquote-caution-color: #ff6e7c;
 
     --sidebar-header-border-color: #7cf1b3;
+
+    /* Additional custom */
+    --content-max-width: 60%;
 }
