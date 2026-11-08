@@ -32,6 +32,9 @@ jobs:
       MDBOOK_VERSION: 0.5.4
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+          ssh-key: ${{ secrets.CODEBERG_SSH_KEY }}
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
