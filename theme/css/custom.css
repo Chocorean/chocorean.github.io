@@ -62,3 +62,24 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
     padding-left: 1.25rem;
 }
+
+main > header {
+    margin-top: 2.5rem;
+    background-color: var(--sidebar-bg);
+    padding: 2rem;
+    border-radius: 0.25rem;
+}
+
+main > header > h1 {
+    color: var(--links);
+    text-decoration: underline;
+}
+
+main > header > div {
+    display: flex;
+    flex-direction: row;
+}
+
+main > header > div > time {
+    margin-left: auto;
+}
