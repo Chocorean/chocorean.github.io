@@ -18,7 +18,7 @@ filename: 0_playground
 I have always wanted to have my own domain and website to play with.
 One can easily find out it is possible to host a website with self-signed certificates for free, but I always believed domain names were a mandatory non-free step, and I eventually gave up and got a domain from *G-company*.
 
-My friend [Mcdostone][https://github.com/mcdostone] introduced me to [EU.org][https://nic.eu.org], which gives to people like you and me the opportunity to get our own domain names for free.
+My friend [Mcdostone](https://github.com/mcdostone) introduced me to [EU.org](https://nic.eu.org), which gives to people like you and me the opportunity to get our own domain names for free.
 This story describes the process I had to go through in order to get a fully working domain name with EU.org.
 
 ## Menu
