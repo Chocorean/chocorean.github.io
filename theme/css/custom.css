@@ -14,6 +14,22 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.25rem;
 }
 
+/* toc */
+.chapter .chapter-item:not(:first-child) {
+    margin-left: 1.5rem;
+    border-inline-start: 4px solid var(--sidebar-header-border-color);
+    margin-block-start: 0 !important;
+    padding-left: 1.5rem;
+}
+
+.chapter strong {
+    display: none;
+}
+
+.chapter .on-this-page {
+    display: none;
+}
+
 /* homepage */
 
 #articles {
