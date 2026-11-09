@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* toc */
-.chapter .chapter-item:not(:first-child) {
+.chapter .chapter-item:not(:first-child):not(.spacer + .chapter-item) {
     margin-left: 1.5rem;
     border-inline-start: 4px solid var(--sidebar-header-border-color);
     margin-block-start: 0 !important;
